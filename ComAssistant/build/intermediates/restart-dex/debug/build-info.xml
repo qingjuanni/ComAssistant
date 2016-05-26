@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86,armeabi-v7a"
+    api-level="19"
+    format="7"
+    timestamp="137963591224844" >
+
+    <task
+        name="javac"
+        duration="2187" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="542" />
+    <task
+        name="verifier"
+        duration="134" />
+
+    <artifact
+        location="E:\kaifaworkspace\ComAssistant\ComAssistant\build\outputs\apk\ComAssistant-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="137963591224844" >
+        <artifact
+            location="E:\kaifaworkspace\ComAssistant\ComAssistant\build\outputs\apk\ComAssistant-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

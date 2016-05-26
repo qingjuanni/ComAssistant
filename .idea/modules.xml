@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ComAssistant.iml" filepath="$PROJECT_DIR$/ComAssistant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ComAssistant/ComAssistant-ComAssistant.iml" filepath="$PROJECT_DIR$/ComAssistant/ComAssistant-ComAssistant.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutRecDisp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <EditText
+            android:id="@+id/editTextRecDisp"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:gravity="top"
+            android:longClickable="false" android:layout_weight="1" android:textSize="14sp" android:editable="false"/>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutRecTool"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/ButtonClear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="清除"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioButtonTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Txt" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonHex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hex" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editTextLines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:editable="false"
+                android:enabled="false"
+                android:imeOptions="actionNone"
+                android:inputType="number"
+                android:longClickable="false"
+                android:text="0" >
+
+                <requestFocus />
+            </EditText>
+
+            <CheckBox
+                android:id="@+id/checkBoxAutoClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="自清" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutCOMAB"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutCOMA"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editTextCOMA"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="top"
+                android:imeOptions="actionDone" android:layout_weight="1" android:singleLine="true"/>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutTooLCOMA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/SpinnerCOMA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutOption1COMA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <Spinner
+                        android:id="@+id/SpinnerBaudRateCOMA"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleButtonCOMA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ToggleButton" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutOption2COMA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/editTextTimeCOMA"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" android:text="500" android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ms" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxAutoCOMA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自动" />
+
+                    <Button
+                        android:id="@+id/ButtonSendCOMA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发送"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutCOMB"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editTextCOMB"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" android:gravity="top" android:imeOptions="actionDone" android:singleLine="true"/>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutTooLCOMB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Spinner
+                    android:id="@+id/SpinnerCOMB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutOption1COMB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <Spinner
+                        android:id="@+id/SpinnerBaudRateCOMB"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ToggleButton
+                        android:id="@+id/ToggleButtonCOMB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ToggleButton" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutOption2COMB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/editTextTimeCOMB"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number" android:text="500"/>
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ms" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxAutoCOMB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自动" />
+
+                    <Button
+                        android:id="@+id/ButtonSendCOMB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发送"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutCOMCD"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutCOMC"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editTextCOMC"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="top"
+                android:imeOptions="actionDone" android:layout_weight="1" android:singleLine="true"/>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutTooLCOMC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Spinner
+                    android:id="@+id/SpinnerCOMC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutOption1COMC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <Spinner
+                        android:id="@+id/SpinnerBaudRateCOMC"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ToggleButton
+                        android:id="@+id/ToggleButtonCOMC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ToggleButton" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutOption2COMC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/editTextTimeCOMC"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:text="500" />
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ms" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxAutoCOMC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自动" />
+
+                    <Button
+                        android:id="@+id/ButtonSendCOMC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发送" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutCOMD"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editTextCOMD"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:imeOptions="actionDone" android:singleLine="true"/>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutTooLCOMD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Spinner
+                    android:id="@+id/SpinnerCOMD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutOption1COMD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <Spinner
+                        android:id="@+id/SpinnerBaudRateCOMD"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ToggleButton
+                        android:id="@+id/ToggleButtonCOMD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ToggleButton" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutOption2COMD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/editTextTimeCOMD"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:text="500" />
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ms" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxAutoCOMD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自动" />
+
+                    <Button
+                        android:id="@+id/ButtonSendCOMD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发送" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
